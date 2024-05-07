@@ -8,19 +8,12 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
             
-            if (ch == 'p') {
-                a++;
-            }
-            else if (ch == 'y') {
-                b++;
-            }
+            if (ch == 'p') a++;
+            else if (ch == 'y') b++;
         }
         
-        if (a == b) {
-            return true;
-        } else {
-            return false;
-        }
+        if (a == b) return true;
+        else return false;
         
     }
 }
