@@ -8,7 +8,6 @@ class Solution {
             num /= 10;
         }
                 
-        if (x % answer == 0) return true;
-        else return false;
+        return (x % answer == 0);
     }
 }
