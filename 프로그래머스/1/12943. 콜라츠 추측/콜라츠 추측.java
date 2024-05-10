@@ -1,10 +1,9 @@
 class Solution {
-    public int solution(int num) {
+    public int solution(long num) {
         int answer = 0;
         
-        int cnt = 0;
         while (num != 1) {
-            if (cnt == 400) {
+            if (answer == 500) {
                 return -1;
             }
             
@@ -13,9 +12,9 @@ class Solution {
             } else {
                 num = num * 3 + 1;
             }
-            cnt++;
+            answer++;
             
         }
-        return cnt;
+        return answer;
     }
 }
