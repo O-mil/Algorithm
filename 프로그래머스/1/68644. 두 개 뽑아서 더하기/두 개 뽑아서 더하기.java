@@ -14,6 +14,6 @@ class Solution {
         List<Integer> list = new ArrayList<>(sum);
         Collections.sort(list);
         
-        return list.stream().mapToInt(Integer::intValue).toArray();
+        return sum.stream().sorted().mapToInt(i->i).toArray();
     }
 }
