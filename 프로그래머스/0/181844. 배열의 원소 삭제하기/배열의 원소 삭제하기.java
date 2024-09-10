@@ -12,6 +12,6 @@ class Solution {
                 if (arr[i] == delete_list[j]) answer.remove(Integer.valueOf(arr[i]));
             }
         }
-        return answer.stream().mapToInt(Integer::intValue).toArray();
+        return answer.stream().mapToInt(i -> i).toArray();
     }
 }
