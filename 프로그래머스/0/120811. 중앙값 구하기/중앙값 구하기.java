@@ -4,6 +4,8 @@ class Solution {
         
         Arrays.sort(array);
         
-        return array[(array.length) / 2];
+        int a = array[array.length / 2];
+        
+        return a;
     }
 }
